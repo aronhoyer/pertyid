@@ -1,13 +1,17 @@
 {
   "name": "pertyid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate cryptographically secure, pretty base64 IDs suitable for a url bar.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint \"./**/*.js\"",
     "test": "mocha \"./**/*.test.js\""
   },
-  "keywords": ["id", "base64", "url"],
+  "keywords": [
+    "id",
+    "base64",
+    "url"
+  ],
   "author": "Aron Høyer <aron@hoyer.com> (https://aronhoyer.com/)",
   "repository": {
     "type": "git",
