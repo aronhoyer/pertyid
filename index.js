@@ -8,7 +8,7 @@ function sanitizeForUri(id) {
   return id.replace(/\//g, '-').replace(/\+/g, '_').replace(/=/g, '');
 }
 
-module.exports = function generateBase64ID(len, prepend) {
+function generateBase64ID(len, prepend) {
   if (len && typeof len !== 'number') {
     const err = new Error(`Invalid length argument. Expected number, but got ${typeof len}`);
     err.name = 'ERR_INVALID_ARGS';
@@ -28,4 +28,6 @@ module.exports = function generateBase64ID(len, prepend) {
   }
 
   return `${prepend || ''}${id}`;
-};
+}
+
+module.exports = generateBase64ID;
