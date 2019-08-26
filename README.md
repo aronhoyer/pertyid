@@ -4,11 +4,25 @@ Generate cryptographically secure, pretty base64 IDs suitable for a url bar.
 
 ## How
 
-`pertyid()` generates a 10 digit string by default, meaning you'll have around ~86 839 771 951 296 000 unique IDs.
+`pertyid(length, prepend)`
 
-In order to generate an ID of a specific length, simply provide the number: `pertyid(13)`.
+* Provide a `length` argument to generate an ID of a given length.
+* Provide a `prepend` argument to prepend the ID with a string.
 
-You can easily prepend your ID with anything you want. Again, just provide it: `pertyid(13, 'u-')`.
+### Generate
+
+```js
+const pertyid = require('pertyid');
+
+/* generates a 10 digit ID */
+pertyid() // sW1PHpPhKw
+
+/* generates a 21 digit ID */
+pertyid(21) // H0HAi5f3kbTTsAVO9oI1h
+
+/* generates a 13 digit ID, prepended with 'u-' */
+pertyid(13, 'u-') // u-khvXejSWsYbC1
+```
 
 ## Contribute
 
