@@ -3,7 +3,7 @@ const { expect } = require('chai');
 const pertyid = require('../index');
 
 describe('pertyid', () => {
-  it('should generate a base64 string', () => {
+  it('should generate a pertyid', () => {
     const regex = new RegExp('[a-zA-Z0-9_-]', 'g');
     expect(regex.test(pertyid())).to.equal(true);
   });
