@@ -1,6 +1,6 @@
 {
   "name": "pertyid",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Generate unique, pretty base64 IDs suitable for a url bar.",
   "main": "index.js",
   "scripts": {
